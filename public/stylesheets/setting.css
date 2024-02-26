@@ -1,0 +1,270 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800;900&display=swap');
+
+
+*{
+  margin:0;
+  padding:0;
+  text-decoration:none;
+  list-style:none;
+  box-sizing:border-box;
+  font-family: 'Mulish', sans-serif;
+  outline:none;
+}
+
+:root {
+  --main-bg-color: #F2F2F2;
+  --primary-color: #5B33DE;
+  --secondary-bg-color: #F6F7FF;
+  --main-border-color: #CCD0EE;
+  --main-text-color: #232532;
+}
+
+body{
+  background: var(--main-bg-color);
+  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+
+  padding:50px;
+}
+
+
+.card{
+  
+  background: #FFFFFF;
+
+border-radius: 15px;
+  border: 2px solid var(--main-border-color);
+}
+
+.first-card{
+  
+  width:570px;
+  height:441px;
+  
+  
+  h3{
+    
+    font-family: Mulish;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+
+color: #232532;
+    width:305px;
+    height:60px;
+    margin:50px 0px 35px 50px ;
+  }
+  
+  .chips{
+    width:490px;
+    height:auto;
+    background:#f2f2f2;
+    margin-left:50px;
+    display:block;
+    margin-bottom:50px;
+    
+    .chip-card{
+      
+      float:left;
+      height:37px;
+      margin-right:10px;
+      display:flex;
+      align-items:center;
+      background: var(--secondary-bg-color);
+border: 1px solid var(--main-border-color);
+border-radius: 18.5px;
+      padding:0 15px;
+      margin-top:10px;
+      cursor:pointer;
+      
+      label{
+        
+        font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+        cursor:pointer;
+        
+
+
+color: var(--main-text-color);
+
+      }
+    }
+  }
+  
+ 
+  .link{
+    display:block;
+    width:150px;
+    margin-left:53px;
+    font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+text-decoration-line: underline;
+
+color: #232532;
+    transform:translateY(50px)
+    
+
+  }
+}
+
+.second-card{
+  
+  
+width:630px;
+height: 501px;
+margin-left:20px;
+  
+  h3{
+    margin-left:50px;
+    margin-top:50px;
+    ont-family: Mulish;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+
+color: #232532;
+    width:305px;
+    height:60px;
+  }
+  
+  .containers{
+    display:flex;
+    margin-left:50px;
+    margin-top:45px;
+    .container{
+      width: 244px;
+height :276px;
+      background: #FFFFFF;
+border: 1px solid #CCD0EE;
+border-radius: 5px;
+      
+      .icon{
+        margin-left:20px;
+        margin-top:20px;
+        margin-bottom:9px;
+      }
+      h4{
+        margin-left:22px;
+        font-family: Mulish;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #232532;
+      }
+      
+      p{
+        width:121px;
+        font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+
+
+color: #232532;
+        margin-left:20px;
+        margin-top:30px;
+
+      }
+      
+      .chip{
+        width:180px;
+        height:29px;
+        background: #F6F7FF;
+border: 1px solid #CCD0EE;
+border-radius: 14.5px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-family: Mulish;
+font-style: italic;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: #23253250;
+
+mix-blend-mode: normal;
+        margin-left:22px;
+        margin-top:38px;
+        
+
+        
+      }
+      
+      .btn{
+        width:205px;
+        height:50px;
+        background: #FFFFFF;
+border: 1px solid #5B33DE;
+border-radius: 5px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        cursor:pointer;
+        
+        font-family: Mulish;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: #5B33DE;
+        margin-left:20px;
+        margin-top:43px;
+        
+        &.active{
+          background:#5B33DE;
+          color:#fff;
+          margin-top:58px;
+        }
+      }
+      &.cone{
+        margin-right:40px;
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  body {
+    flex-direction:column-reverse;
+    
+  }
+  .second-card{
+    margin-bottom:20px;
+    margin-left:0;
+  }
+  
+}
